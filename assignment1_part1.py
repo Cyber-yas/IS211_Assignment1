@@ -7,7 +7,6 @@ class ListDivideException(Exception):
 
 def test_list_divide():
     try:
-        
         assert listDivide([1,2,3,4,5]) == 2
         assert listDivide([2,4,6,8,10]) == 5
         assert listDivide([30, 54, 63,98, 100], divide=10) == 2
@@ -17,5 +16,6 @@ def test_list_divide():
         raise ListDivideExeption(f"Test failed: {e}")
         
 if __name__ == "__main__":
+
     test_list_divide()
     print("All tests passed,")
